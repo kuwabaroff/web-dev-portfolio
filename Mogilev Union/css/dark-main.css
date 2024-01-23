@@ -1,0 +1,500 @@
+body {
+    padding: 0;
+    margin: 0;
+    background: black;
+    transition: 1s;
+}
+
+.container {
+    width: 1310px;
+    margin: 0 auto;
+}
+
+h2, h3, h4, h5, h6 {
+    font-family: RoadRadio;
+    font-weight: 900;
+    padding: 0;
+    margin: 0;
+}
+
+h1 {
+    font-family: Intro;
+    font-weight: 400;
+    color: white;
+    font-size: 45px;
+    padding: 0;
+    margin: 0;
+}
+
+h2 {
+    font-size: 25px;
+    color: #2475ED;
+}
+
+h3 {
+    font-size: 19px;
+    color: #2475ED;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    font-family: RoadRadio;
+    font-weight: 300;
+    font-size: 18px;
+    color: #dddddd;
+    margin: 0;
+    padding: 0;
+}
+
+.logo {
+    width: 35px;
+    height: 35px;
+    margin-left: 40px;
+}
+
+.mu-logo {
+    width: 35px;
+    margin-left: 40px;
+}
+
+.menu-border {
+    background-color: #1D1C21;
+    border: 2px solid #353535;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    padding: 18px 0;
+    margin-top: 70px;
+}
+
+.web-title {
+    color: #2475ED;
+}
+
+.news-section-title {
+    margin-bottom: 30px;
+}
+
+.new-date {
+    color: #A3A3A3;
+}
+
+.new-logo {
+    border-radius: 15px;
+}
+
+.news {
+    margin-top: 100px;
+}
+
+.new {
+    background-color: #1D1C21;
+    border: 2px solid #353535;
+    width: 639px;
+    border-radius: 15px;
+}
+
+.new:hover {
+    background-color: #141F2F;
+    border: 2px solid #2475ED;
+    width: 639px;
+    border-radius: 15px;
+    transition: 0.5s;
+    transform: scale(1.02);
+}
+
+.new:not(:hover) {
+    transition: 0.5s;
+}
+
+.new-info {
+    width: 583px;
+    margin: 30px 0;
+    margin-left: 30px;
+}
+
+.new-description {
+    margin: 20px 0;
+}
+
+.news-border {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.matches-border {
+    display: flex;
+    justify-content: space-between;
+}
+
+.match {
+    border-radius: 15px;
+    background-color: #1D1C21;
+    border: 2px solid #353535;
+    display: flex;
+    gap: 50px;
+    padding: 29px;
+}
+
+.match-team-name {
+    color: white;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.match-team-logo {
+    height: 75px;
+    
+}
+
+.match-score {
+    color: white;
+    text-align: center;
+    font-size: 35px;
+    font-weight: 900;
+    letter-spacing: 5.25px;
+}
+
+.match-day {
+    margin-top: 15px;
+}
+
+.match-team-name {
+    margin-top: 10px;
+}
+
+.tour-info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.tour-name {
+    border: 2px solid #353535;
+    border-radius: 10px;
+    padding: 10px 0px;
+    text-align: center;
+    width: 600px;
+}
+
+.tour-format {
+    border: 2px solid #353535;
+    border-radius: 10px;
+    padding: 10px 0px;
+    text-align: center;
+    width: 100px;
+}
+
+.tour-table {
+    width: 1055px;
+    margin: 0 auto;
+}
+
+.table-section-title {
+    margin-bottom: 30px;
+    margin-top: 90px;
+}
+
+.origins-border {
+    display: flex;
+    justify-content: space-between;
+}
+
+.origin {
+    text-align: center;
+    width: 300px;
+}
+
+.origins {
+    margin: 250px 0;
+}
+
+.big-origin {
+    text-align: center;
+    width: 650px;
+}
+
+.origin-team-date {
+    margin-bottom: 15px;
+    color: #858585;
+}
+
+.origin-team-title {
+    font-size: 25px;
+}
+
+.origin-date {
+    color: #2475ED;
+    font-weight: 700;
+}
+
+.origin-logo {
+    width: 150px;
+    margin-bottom: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.table-pos {
+    background-color: #1D1C21;
+    border: 2px solid #353535;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    padding: 18px 0;
+    margin-top: 15px;
+}
+
+.table-pos:hover {
+    background-color: #141F2F;
+    border: 2px solid #2475ED;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    padding: 18px 0;
+    margin-top: 15px;
+    transition: 0.5s;
+    transform: scale(1.05);
+}
+
+.table-pos:not(:hover) {
+    transition: 0.5s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.team-main {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.team-info {
+    display: flex;
+    margin-right: 30px;
+}
+
+.team-games {
+    width: 50px;
+    text-align: center;
+}
+
+.team-wins {
+    width: 50px;
+    text-align: center;
+}
+
+.team-draws {
+    width: 50px;
+    text-align: center;
+}
+
+.team-loses {
+    width: 50px;
+    text-align: center;
+}
+
+.team-difference {
+    width: 80px;
+    text-align: center;
+}
+
+.team-rate {
+    width: 60px;
+    text-align: center;
+}
+
+.team-point {
+    width: 50px;
+    text-align: center;
+}
+
+.table-pos h2 {
+    color: white;
+    font-weight: 600;
+}
+
+.strikers {
+    margin-top: 50px;
+}
+
+.assists {
+    margin-top: 50px;
+}
+
+.players-border {
+    display: flex;
+    gap: 27px;
+    margin-bottom: 27px;
+}
+
+.player {
+    background-color: #1D1C21;
+    border: 2px solid #353535;
+    border-radius: 15px;
+    width: 239px;
+    text-align: center;
+}
+
+.player:hover {
+    background-color: #141F2F;
+    border: 2px solid #2475ED;
+    border-radius: 15px;
+    width: 239px;
+    text-align: center;
+    transition: 0.5s;
+    transform: scale(1.1);
+}
+
+.player:not(:hover) {
+    transition: 0.5s;
+}
+
+.player-info {
+    margin: 19px 0;
+}
+
+.player-position {
+    font-size: 15px;
+    color: #666666;
+}
+
+.roster-title {
+    margin-top: 90px;
+    margin-bottom: 30px;
+}
+
+.credits {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.link {
+    margin-right: 10px;
+
+}
+
+.mu-credit {
+    font-family: RoadRadio;
+    font-size: 20px;
+    color: #dddddd;
+}
+
+.footer {
+    margin-top: 100px;
+}
+
+
+
+
+
+
+
+.main-screen-wrapper {
+    text-align: center;
+}
+
+.main-screen-title {
+    font-family: RoadRadio;
+    font-weight: 900;
+    color: #2475ED;
+    font-size: 75px;
+    margin-top: 50px;
+}
+
+.main-screen-description {
+    color: #2475ED;
+    text-align: center;
+    font-family: RoadRadio;
+    font-size: 50px;
+    font-weight: 300;
+}
+
+
+
+
+
+
+
+.menu-main-border {
+    margin-top: 10px;
+}
+
+.header {
+    padding-top: 125px;
+    padding-bottom: 125px;
+}
+
+.button {
+    color: white;
+    text-align: center;
+    font-family: RoadRadio;
+    font-size: 25px;
+    font-weight: 400;
+    border-radius: 30px;
+    background-color: #1D1C21;
+    border: 2px solid #B6B6B6;
+    padding: 15px 45px;
+    margin-top: 50px;
+}
+
+.button:hover {
+    color: white;
+    text-align: center;
+    font-family: RoadRadio;
+    font-size: 25px;
+    font-weight: 400;
+    border-radius: 30px;
+    background-color: #2475ED;
+    border: 2px solid #2475ED;
+    padding: 15px 45px;
+    transition: 0.3s;
+}
+
+.button:not(:hover) {
+    transition: 0.3s;
+}
+
+.theme-button {
+    border: none;
+    background-color: #1D1C21;
+    margin-right: 40px;
+}
+
+.theme-button-img {
+    width: 35px;
+}

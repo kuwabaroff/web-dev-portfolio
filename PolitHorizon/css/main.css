@@ -1,0 +1,587 @@
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../fonts/Gilroy-Regular.ttf') format('truetype');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../fonts/Gilroy-Semibold.ttf') format('truetype');
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../fonts/Gilroy-Bold.ttf') format('truetype');
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../fonts/Gilroy-Extrabold.ttf') format('truetype');
+    font-weight: 800;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Gilroy', sans-serif;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.34px;
+    height: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    font-family: 'Gilroy', sans-serif;
+    color: #360034;
+    font-size: 75px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+h3 {
+    color: #360034;
+    font-size: 35px;
+    font-weight: 600;
+    letter-spacing: 1.75px;
+}
+
+.container {
+    width: 1400px;
+    margin: 0 auto;
+}
+
+.header {
+    background: rgba(0, 0, 0, 0.03);
+}
+
+.header-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.header-bar-buttons-wrapper {
+    display: flex;
+    gap: 45px;
+}
+
+.header-bar-button {
+    color: #868686;
+    font-size: 19px;
+    font-weight: 600;
+}
+
+.header-bar-button:hover {
+    transition: 0.3s;
+    color: #703A6D;
+}
+
+.header-bar-button:not(:hover) {
+    transition: 0.3s;
+}
+
+.active-header-bar-button {
+    color: #360034;
+    text-shadow: 0px 4px 4px rgba(199, 13, 203, 0.25);
+    font-size: 19px;
+    font-weight: 600;
+}
+
+.header-bar-server-online-info-wrapper {
+    display: flex;
+    gap: 15px;
+}
+
+.server-online-info {
+    color: #999;
+    font-size: 12px;
+    font-weight: 600;
+    border: 1px solid #999;
+    padding: 10px 25px;
+    border-radius: 30px;
+    text-transform: uppercase;
+    letter-spacing: 1.25px;
+}
+
+.server-online-info:hover {
+    color: #ffffff;
+    background: #a70090;
+    transition: 0.3s;
+}
+
+.server-online-info:not(:hover) {
+    transition: 0.3s;
+}
+
+.section-title-wrapper {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.polit-horizon-title {
+    text-transform: uppercase;
+    color: #000;
+    font-size: 25px;
+    font-weight: 600;
+    letter-spacing: 1.25px;
+}
+
+.o-title {
+    color: #B205B6;
+}
+
+.shop {
+    padding-bottom: 140px;
+    background: url('../img/bg.png') no-repeat center / cover;
+}
+
+.shop-items {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.items-wrapper {
+    display: flex; 
+    justify-content: space-between; 
+} 
+
+.item-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: 25px;
+}
+
+.item {
+    width: 320px;
+    height: 400px;
+    border-radius: 25px;
+    background: #FFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0px 0px 25px 0px rgba(199, 13, 203, 0.40);
+}
+
+.item:hover {
+    transition: 1s;
+    transform: scale(1.1);
+    background: #fff8fe;
+}
+
+.item:not(:hover) {
+    transition: 1s;
+}
+
+.item-icon {
+    width: 105px;
+}
+
+.item-title {
+    font-family: 'Russo One', sans-serif;
+    font-size: 25px;
+    margin-top: 10px;
+}
+
+.item-description {
+    color: #af94ab;
+    text-align: center;
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: 0.32px;
+    width: 280px;
+    font-family: 'Rubik Mono One', sans-serif;
+}
+
+.item-buy-button {
+    text-transform: uppercase;
+    color: #C70DCB;
+    font-family: 'Gilroy', sans-serif;
+    font-size: 18px;
+    font-weight: 800;
+    letter-spacing: 1.25px;
+    border-radius: 25px;
+    border: 5px solid #C70DCB;
+    width: 250px;
+    padding: 15px 0;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.item-buy-button:hover {
+    transition: 0.5s;
+    background: #C70DCB;
+    border: 5px solid #fec1ff;
+    color: white;
+}
+
+.item-buy-button:not(:hover) {
+    transition: 0.5s;
+}
+
+.blocked-item {
+    width: 320px;
+    height: 400px;
+    border-radius: 25px;
+    background: #FFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.blocked-item-buy-button {
+    text-transform: uppercase;
+    color: #5e5e5e;
+    font-family: 'Gilroy', sans-serif;
+    font-size: 17px;
+    font-weight: 700;
+    letter-spacing: 1.25px;
+    border-radius: 25px;
+    border: 6px solid #5e5e5e;
+    width: 250px;
+    padding: 15px 0;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.blocked-item-buy-button:hover {
+    transition: 0.5s;
+    background: #5e5e5e;
+    border: 6px solid #c7c6c6;
+    color: white;
+}
+
+.blocked-item-buy-button:not(:hover) {
+    transition: 0.5s;
+}
+
+.blocked-item-title {
+    font-family: 'Russo One', sans-serif;
+    font-size: 25px;
+    margin-top: 10px;
+    color: #000;
+}
+
+.blocked-item-description {
+    color: #afafaf;
+    text-align: center;
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: 0.32px;
+    width: 280px;
+    font-family: 'Rubik Mono One', sans-serif;
+}
+
+.empty-page-wrapper {
+    padding-top: 250px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+}
+
+.empty-page-title {
+    font-family: Rubik Mono One;
+    font-size: 150px;
+}
+
+.empty-page-title-icon {
+    width: 100px;
+}
+
+.empty-page-subtitle {
+    font-family: Rubik Mono One;
+    color: #360034;
+    font-size: 30px;
+}
+
+.empty-page-description {
+    font-family: Montserrat;
+    font-size: 20px;
+    color: #360034;
+}
+
+.footer {
+    background: #360034;
+    padding: 50px 0;
+}
+
+.credits {
+    display: flex;
+    justify-content: space-between;
+}
+
+.credits-wrapper {
+    display: flex;
+    gap: 50px;
+}
+
+.credits-column-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    text-align: left;
+}
+
+.credits-main-title {
+    color: #FFEFFE;
+    font-size: 17px;
+    font-weight: 600;
+    letter-spacing: 0.36px;
+}
+
+.credits-title {
+    color: #9C7A9A;
+    font-size: 17px;
+    font-weight: 600;
+    letter-spacing: 0.36px;
+}
+
+.links-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.copied-text {
+    font-family: 'Rubik Mono One', sans-serif;
+    color: #9c07b0;
+    text-align: center;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 1.25px;
+    padding: 15px 0;
+}
+
+.copied {
+    left: 50%;
+    margin-left: -125px;
+    position: fixed !important;
+    transform: translateY(-200%);
+    transition: 0.6s;
+    width: 250px;
+    text-align: center;
+    border-radius: 0 0 25px 25px;
+    background: #f5dfff;
+    box-shadow: 0px 0px 10px 0px #7300a8;
+}
+
+.copied.active {
+    transform: translateY(0%);
+}
+
+.result-payment {
+    padding-top: 300px;
+}
+
+.payment-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.result-icon {
+    width: 50px;
+    padding: 20px;
+    background: #EEFFEE;
+    border-radius: 25px;
+}
+
+.successful-payment-title {
+    margin-top: 50px;
+    margin-bottom: 10px;
+    color: #013D00;
+    font-family: Rubik Mono One;
+    font-size: 30px;
+    letter-spacing: 0px;
+}
+
+.successful-payment-description {
+    font-family: 'Montserrat', sans-serif;
+    color: #013D00;
+    text-align: center;
+    font-size: 20px;
+}
+
+.failure-result-icon {
+    width: 50px;
+    padding: 20px;
+    background: #FEE;
+    border-radius: 25px;
+}
+
+.failure-payment-title {
+    color: #3D0000;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    font-family: Rubik Mono One;
+    font-size: 30px;
+    letter-spacing: 0px;
+}
+
+.failure-payment-description {
+    font-family: 'Montserrat', sans-serif;
+    color: #3D0000;
+    text-align: center;
+    font-size: 20px;
+}
+
+
+
+.version-title-wrapper {
+    display: flex;
+    gap: 10px;
+    align-items: end;
+}
+
+.version-title {
+    font-size: 16px;
+    color: #363B40;
+    letter-spacing: 0.8px;
+}
+
+.version-date {
+    font-size: 14px;
+    color: #7D7F81;
+    letter-spacing: 0.8px;
+}
+
+li {
+    color: #C70DCB;
+}
+
+li span {
+    color: #393939;
+    font-family: 'Gilroy';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.7px;
+}
+
+.version-updates {
+    margin-left: 35px;
+    margin-top: 8px;
+}
+
+.versions-history .container {
+    width: 1000px;
+}
+
+.version {
+    margin-top: 30px;
+}
+
+.versions-history-title {
+    color: #360034;
+    font-family: 'Gilroy';
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1.25px;
+    text-transform: none;
+    margin-top: 50px;
+}
+
+
+
+.section-title-wrapper {
+    padding: 50px 0 30px 0;
+}
+
+
+
+
+
+
+
+
+
+
+.faq {
+    padding-bottom: 100px;
+}
+
+.questions-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.question {
+    border-radius: 25px;
+    background: #F7F7F7;
+}
+
+.question:hover {
+    transition: 0.5s;
+    background: #FFF2FF;
+}
+
+.question:not(:hover) {
+    transition: 0.5s;
+}
+
+
+.answer {
+    display: flex;
+    justify-content: center;
+    background: #EADAEA;
+    text-align: center;
+    border-radius: 0 0 25px 25px;
+}
+
+.question-title {
+    display: block;
+    list-style: none;
+    color: #AD00A6;
+    font-family: 'Gilroy';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 1px;
+    padding: 24px 33px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.question-answer {
+    color: #360034;
+    text-align: center;
+    font-family: 'Gilroy';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 1px;
+    padding: 20px 0;
+    width: 1200px;
+}
+
+
+.timer {
+    margin-top: 75px;
+}
